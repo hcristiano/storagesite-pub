@@ -11,7 +11,12 @@
                             <h3 class="font-weight-light mb-3">
                                 {{ subtitle }}
                             </h3>
-                            <v-row>
+                            <router-link tag="a" to="/about" exact class="mb-4">
+                                <h5>
+                                    Learn More
+                                </h5>
+                            </router-link>
+                            <v-row class="pt-4">
                                 <v-col cols="12" 
                                     class="d-flex align-center"
                                     v-for="(feature, i) in about_us"
@@ -31,7 +36,7 @@
                         </v-col>
                         <v-col cols="12" md="5" class="d-none d-md-flex">
                             <v-img
-                                src="@/assets/img/storage_profile.jpg"
+                                src="@/assets/img/home/storage_profile.jpg"
                                 class="d-block ml-auto mr-auto"
                                 max-width="400px"
                             />
@@ -52,19 +57,19 @@ export default {
             subtitle: "A family-owned self-storage facility in the heart of East Haven, just minutes from the Connecticut",
             about_us: [
                 {
-                    icon: require("@/assets/icons/warehouse-about.svg"),
+                    icon: require("@/assets/icons/home/about/warehouse-about.svg"),
                     text: "LARGE 1000 – 3000 Sq. Ft Building on Premise, will Sub Divide"
                 },
                 {
-                    icon: require("@/assets/icons/discount.svg"),
+                    icon: require("@/assets/icons/home/about/discount.svg"),
                     text: "SPECIAL PRICING with one year rental including OneMonth Free."
                 },
                 {
-                    icon: require("@/assets/icons/protection.svg"),
+                    icon: require("@/assets/icons/home/about/protection.svg"),
                     text: "Well Lighted Gated Secure Area with Video Sevellance Cameras"
                 },
                 {
-                    icon: require("@/assets/icons/military.svg"),
+                    icon: require("@/assets/icons/home/about/military.svg"),
                     text: "Special Discounts for Military, Veterans, & First Responders"
                 }
             ]

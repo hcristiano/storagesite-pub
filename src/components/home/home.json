@@ -1,0 +1,33 @@
+{
+    "title": "Storage Times",
+    "contact": {
+        "address": {
+            "address1": "444 Short Beach Rd",
+            "address2": "",
+            "city": "East Haven",
+            "state": "CT",
+            "zip": "06512"
+        },
+        "email": "storagetime@outlook.com",
+        "phone": "203-467-2761"
+    },
+    "dialog": false,
+    "videoId": "i8IvvHJssWE",
+    "features": [
+        {
+            "img": "@/assets/icons/location.svg",
+            "title": "Convenient Location",
+            "text": "Located in the heart of East Haven."
+        },
+        {
+            "img": "@/assets/icons/clock.svg",
+            "title": "24 Hour Access",
+            "text": "Open 24 hours a day, 7 days a week!"
+        },
+        {
+            "img": "@/assets/icons/warehouse-home.svg",
+            "title": "Various Unit Sizes",
+            "text": "We offer 8 different unit sizes."
+        }
+    ],
+}

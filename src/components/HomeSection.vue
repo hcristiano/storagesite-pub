@@ -1,6 +1,6 @@
 <template>
     <section id="hero">
-        <v-parallax src="@/assets/img/storage_background_crop.png" height="750">
+        <v-parallax src="@/assets/img/home/hero_background.png" height="750">
             <v-row align="center" justify="center">
                 <v-col cols="10">
                     <v-row align="center" justify="center">
@@ -37,7 +37,7 @@
                 </v-col>
             </v-row>
             <div class="svg-border-waves text-white">
-                <v-img src="@/assets/img/borderWaves.svg" />
+                <v-img src="@/assets/img/home/borderWaves.svg" />
             </div>
         </v-parallax>
 
@@ -82,7 +82,7 @@
         </v-container>
        
         <div class="svg-border-waves">
-            <img src="~@/assets/img/wave2.svg" />
+            <img src="~@/assets/img/home/wave2.svg" />
         </div>
     </section>
 </template>
@@ -101,24 +101,22 @@
                         state: "CT",
                         zip: "06512"
                     },
-                    email: "storagetime@outlook.com",
+                    email: "joash.arduini@att.net",
                     phone: "203-467-2761"
                 },
-                dialog: false,
-                videoId: "i8IvvHJssWE",
                 features: [
                     {
-                        img: require("@/assets/icons/location.svg"),
+                        img: require("@/assets/icons/home/location.svg"),
                         title: "Convenient Location",
                         text: "Located in the heart of East Haven.",
                     },
                     {
-                        img: require("@/assets/icons/clock.svg"),
+                        img: require("@/assets/icons/home/clock.svg"),
                         title: "24 Hour Access",
                         text: "Open 24 hours a day, 7 days a week!",
                     },
                     {
-                        img: require("@/assets/icons/warehouse-home.svg"),
+                        img: require("@/assets/icons/home/warehouse-home.svg"),
                         title: "Various Unit Sizes",
                         text: "We offer 8 different unit sizes.",
                     },
@@ -126,90 +124,23 @@
             };
         },
         watch: {
-            dialog(value) {
-            if (!value) {
-                this.pause();
-            }
-            },
+        
         },
         methods: {
-            ready(event) {
-            this.player = event.target;
-            },
-            playing(event) {
-            // The player is playing a video.
-            },
-            change() {
-            // when you change the value, the player will also change.
-            // If you would like to change `playerVars`, please change it before you change `videoId`.
-            // If `playerVars.autoplay` is 1, `loadVideoById` will be called.
-            // If `playerVars.autoplay` is 0, `cueVideoById` will be called.
-            this.videoId = "another video id";
-            },
-            stop() {
-            this.player.stopVideo();
-            },
-            pause() {
-            this.player.pauseVideo();
-            },
+           
         },
     };
 </script>
 
 <style lang="scss">
 .circle {
-  stroke: white;
-  stroke-dasharray: 650;
-  stroke-dashoffset: 650;
-  -webkit-transition: all 0.5s ease-in-out;
-  opacity: 0.3;
-}
-
-.playBut {
-  /*  border: 1px solid red;*/
-  display: inline-block;
-  -webkit-transition: all 0.5s ease;
-
-  .triangle {
-    -webkit-transition: all 0.7s ease-in-out;
-    stroke-dasharray: 240;
-    stroke-dashoffset: 480;
     stroke: white;
-    transform: translateY(0);
-  }
-
-  &:hover {
-    .triangle {
-      stroke-dashoffset: 0;
-      opacity: 1;
-      stroke: white;
-      animation: nudge 0.7s ease-in-out;
-
-      @keyframes nudge {
-        0% {
-          transform: translateX(0);
-        }
-        30% {
-          transform: translateX(-5px);
-        }
-        50% {
-          transform: translateX(5px);
-        }
-        70% {
-          transform: translateX(-2px);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0.3;
     }
 
-    .circle {
-      stroke-dashoffset: 0;
-      opacity: 1;
-    }
-  }
-}
 </style>
 
 <style>

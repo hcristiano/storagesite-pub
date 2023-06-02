@@ -1,12 +1,11 @@
 import Vue from 'vue'
+import router from './router'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
-import VueYouTubeEmbed from 'vue-youtube-embed'
 import * as VueGoogleMaps from 'vue2-google-maps'
 // import firebase from 'firebase/app'
 // import 'firebase/firestore'
 
-Vue.use(VueYouTubeEmbed)
 Vue.config.productionTip = false
 Vue.use(VueGoogleMaps, {
   load: {
@@ -17,6 +16,7 @@ Vue.use(VueGoogleMaps, {
 
 
 new Vue({
+  router,
   vuetify,
   render: h => h(App)
 }).$mount('#app')

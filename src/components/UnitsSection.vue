@@ -14,7 +14,7 @@
                                             <div class="flex-center">
                                                 <div class="circle1">
                                                     <div class="circle2">
-                                                        <v-img src="~@/assets/icons/warehouse-sm.svg"></v-img>
+                                                        <v-img src="~@/assets/icons/home/warehouse-sm.svg"></v-img>
                                                     </div>
                                                 </div>
                                             </div>
@@ -42,7 +42,7 @@
                                             <div class="flex-center">
                                                 <div class="circle1">
                                                     <div class="circle2">
-                                                        <v-img src="~@/assets/icons/warehouse-lg.svg"></v-img>
+                                                        <v-img src="~@/assets/icons/home/warehouse-lg.svg"></v-img>
                                                     </div>
                                                 </div>
                                             </div>

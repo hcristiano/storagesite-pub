@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 #discounts {
-  background-image: url("~@/assets/img/storage_discount.png");
+  background-image: url("~@/assets/img/home/discounts_background.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

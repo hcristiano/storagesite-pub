@@ -1,7 +1,7 @@
 <template>
     <section class="py-8" id="contact">
         <v-container fluid>
-            <v-row align="center" justify="center">
+            <v-row align="center" justify="center" class="py-4">
                 <v-col cols="10">
                     <v-row justify="center">
                         <v-col cols="12" sm="5">
@@ -21,7 +21,7 @@
                             </h3>
                         </v-col>
                         <v-col cols="12" sm="7">
-                            <GmapMap
+                            <!-- <GmapMap
                                 :center='center'
                                 :zoom='12'
                                 style='width:100%;  height: 400px;'
@@ -32,19 +32,8 @@
                                     :position="m.position"
                                     @click="center=m.position"
                                 />
-                            </GmapMap>
-                            <!-- <v-form ref="form" v-model="form.valid" :lazy-validation="form.lazy">
-                                <v-text-field v-model="form.name" :rules="form.nameRules" label="Name" required></v-text-field>
-
-                                <v-text-field v-model="form.email" :rules="form.emailRules" label="Email" required></v-text-field>
-
-                                <v-textarea v-model="form.textArea" :rules="form.textAreaRules" label="Message" required />
-
-                                <v-btn :disabled="!form.valid" color="primary" :dark="form.valid" rounded block class="mt-3"
-                                    @click="submit">
-                                    Enviar
-                                </v-btn>
-                            </v-form> -->
+                            </GmapMap> -->
+                            <contactform/>
                         </v-col>
                     </v-row>
                 </v-col>
@@ -74,9 +63,13 @@
 
 <script>
 // import {db} from '@/main'
-
+import contactform from "./contact/ContactForm.vue"
+import emailjs from 'emailjs-com';
 export default {
     name: "Contact",
+    components: {
+        contactform
+    },
     data() {
         return {
             center: { 
@@ -100,34 +93,14 @@ export default {
                     state: "CT",
                     zip: "06512"
                 },
-                email: "storagetime@outlook.com",
+                email: "joash.arduini@att.net",
                 phone: "203-467-2761"
             },
-            form: {
-                valid: true,
-                name: "",
-                nameRules: [
-                    (v) => !!v || "Name is required.",
-                    (v) => (v && v.length >= 6) || "Name needs 6 or more characters",
-                ],
-                email: "",
-                emailRules: [
-                    (v) => !!v || "Email is required.",
-                    (v) => /.+@.+\..+/.test(v) || "Provide a valid email.",
-                ],
-                textArea: "",
-                textAreaRules: [
-                    (v) => !!v || "Message is required.",
-                    (v) => (v && v.length >= 10) || "Minimum of 10 characters",
-                ],
-                lazy: false
-            }
+            
         }
     },
     methods: {
-        submit() {
-            
-        }
+        
     }
 };
 </script>

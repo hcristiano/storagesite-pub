@@ -9,7 +9,7 @@
             <v-list>
                 <v-list-item>
                     <v-list-item-avatar>
-                        <img src="@/assets/img/storage_profile.jpg" alt="Logo" />
+                        <img src="@/assets/img/home/storage_profile.jpg" alt="Logo" />
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-list-item-title>Storage Times</v-list-item-title>
