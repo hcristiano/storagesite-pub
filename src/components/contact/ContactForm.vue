@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="form_submitted">
-            <v-row justify="center">
+            <v-row justify="start">
                 <v-col cols="12" sm="8">
                     <h2>Thank you!</h2>
                     <h4 class="pt-2 font-weight-regular">
