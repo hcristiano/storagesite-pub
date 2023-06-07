@@ -17,7 +17,7 @@
         import about from "../components/about/About";
   
         export default {
-            name: "About",
+            name: "AboutSection",
 
             components: {
                 navigation,
@@ -27,7 +27,7 @@
 
             data: () => ({
                 fab: null,
-                color: "secondary",
+                color: "main_theme",
                 flat: false,
             }),
 
